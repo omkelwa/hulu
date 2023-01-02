@@ -29,6 +29,10 @@ nav{
 nav img{
     height: 60px;
 }
+
+.responsive-nav{
+    display:none;
+}
 .login-btn{
     padding: 10px 20px 10px 20px;
     border:none;
@@ -56,6 +60,9 @@ nav img{
 }
 .container .hero-section img{
     width:700px;
+}
+.container .hero-section .logos{
+    display:none;
 }
 .container .hero-section h2{
     color:white;
@@ -282,4 +289,118 @@ footer {
 }
 footer ul {
     list-style: none;
+}
+
+
+/* responsive section starts */
+
+@media(max-width:768px){
+  .main-container .container{
+        width:510px;
+    }
+     nav{
+        display:none;
+    }
+    .responsive-nav{
+        display:flex;
+       justify-content: space-between;
+    }
+    .responsive-nav i{
+        font-size:20px;
+    }
+    .hero-section{
+        width:500px;
+        margin: auto;
+    }
+    .hero-section img{
+        display: none;
+    }
+    
+    .information p{
+        font-size:18px;
+        margin:10px 0px;
+    }
+    .information h2{
+        font-size:35px;
+    }
+    .information p:last-child{
+        width:520px;
+    }
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .card div{
+        width:220px;
+        margin-bottom: 20px;
+        font-size:14px;
+    }
+    .live-tv{
+        width:450px;
+        font-size:15px;
+        margin: auto;
+        
+    }
+    .live-tv h2{
+        font-size:30px;
+        margin:20px; 0px;
+        
+    }
+    .live-tv br{
+        display: none;
+    }
+
+    .live-tv p:nth-child(3){
+        width:450px;
+        text-align-last: none;
+    }
+    .sport{
+        width:550px;
+        font-size:16px;
+        position: relative;
+    }
+    .sport br{
+        display: none;
+    }
+    .sport div:first-child{
+        padding:20px;
+        text-align: center;
+    }
+    .sport p{
+        text-align: center;
+    }
+    .sport a{
+        color:white;
+    }
+    .sport img{
+        display: none;
+        
+    }
+    .plan{
+        width:500px;
+    }
+
+    .plan-heading{
+        width:400px;
+        margin:auto;
+    }
+    .plan-heading div:first-child{
+        display: none;
+    }
+    .plan-feature table{
+        width:400px;
+        
+    }
+    
+    .tr-9 {
+        display: none;
+        
+    }
+
+    footer{
+        display: none;
+    }
 }
